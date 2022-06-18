@@ -80,8 +80,17 @@
   </script>
 
   <script type="text/javascript">
-    const queryString = window.location.search;  // read URL parameter to get sheet link to connect
-    console.log(queryString);
+    const params = new Proxy(new URLSearchParams(window.location.search), {
+      get: (searchParams, prop) => searchParams.get(prop),
+    });
+    // Get the value of "data" in eg "https://www.socioatlas.xyz/socioatlas_map/?data=https://docs.google.com/spreadsheets/d/1Q7_ADtszhCXHtBFHj-qBF377xuglOH2t708T8acIiQc/edit#gid=0"
+    var value = params.data; // "data"
+    
+    alert(queryString);
+
+
+
+
   </script>
 
 
