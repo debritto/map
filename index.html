@@ -79,6 +79,12 @@
     }).setView([41.76,-72.69], 13); // default center is overridden by Google Sheet options and points
   </script>
 
+  <script type="text/javascript">
+    const queryString = window.location.search;  // read URL parameter to get sheet link to connect
+    console.log(queryString);
+  </script>
+
+
   <script type="text/javascript" src="./google-doc-url.js"></script>
   <script type="text/javascript" src="./scripts/constants.js"></script>
   <script type="text/javascript" src="./scripts/palette.js"></script>
