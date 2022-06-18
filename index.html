@@ -83,12 +83,11 @@
     const params = new Proxy(new URLSearchParams(window.location.search), {
       get: (searchParams, prop) => searchParams.get(prop),
     });
-    // Get the value of "data" in eg "https://www.socioatlas.xyz/socioatlas_map/?sheetdata=https://docs.google.com/spreadsheets/d/1Q7_ADtszhCXHtBFHj-qBF377xuglOH2t708T8acIiQc/edit#gid=0"
+    // Get the value of "data" in eg "https://www.socioatlas.xyz/socioatlas_map/?sheetdata=https://docs.google.com/spreadsheets/d/1tMx_0t1HgMtcHO-YSyfTYnvkbM7M1uJaM9d95TzTozg/edit#gid=0
     var googleDocURL = params.sheetdata; // "sheetdata"
     
     console.log(googleDocURL);
   </script>
-
 
   <script type="text/javascript" src="./google-doc-url.js"></script>
   <script type="text/javascript" src="./scripts/constants.js"></script>
