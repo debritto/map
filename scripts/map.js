@@ -978,7 +978,8 @@ $(window).on('load', function() {
    var mapData;
 
    $.ajax({
-       url:'./csv/Options.csv',
+       //url:'./csv/Options.csv',
+       url:'./csv/Points.csv',
        type:'HEAD',
        error: function() {
          // Options.csv does not exist in the root level, so use Tabletop to fetch data from
@@ -1006,9 +1007,9 @@ $(window).on('load', function() {
 
               // First, read 3 sheets: Options, Points, and Polylines
               $.when(
-                $.getJSON(apiUrl + spreadsheetId + '/values/Options?key=' + googleApiKey),
-                $.getJSON(apiUrl + spreadsheetId + '/values/Points?key=' + googleApiKey),
-                $.getJSON(apiUrl + spreadsheetId + '/values/Polylines?key=' + googleApiKey)
+                //$.getJSON(apiUrl + spreadsheetId + '/values/Options?key=' + googleApiKey),
+                $.getJSON(apiUrl + spreadsheetId + '/values/Points?key=' + googleApiKey)
+                //$.getJSON(apiUrl + spreadsheetId + '/values/Polylines?key=' + googleApiKey)
               ).done(function(options, points, polylines) {
 
                 // Which sheet names contain polygon data?
@@ -1061,7 +1062,7 @@ $(window).on('load', function() {
       
         $.when(
           $.get('./csv/Options.csv'),
-          $.get('./csv/Points.csv'),
+          //$.get('./csv/Points.csv'),
           $.get('./csv/Polylines.csv')
         ).done(function(options, points, polylines) {
       
