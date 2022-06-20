@@ -3,7 +3,7 @@ $(window).on('load', function() {
   var group2color = {};
 
   var polygonSettings = [];
-  var polygonsLegend;
+  var polygonsLegend; 
 
   var completePoints = false;
   var completePolygons = false;
