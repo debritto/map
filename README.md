@@ -4,7 +4,7 @@ Customize Leaflet maps with a linked Google Sheets template or CSV files and Geo
 ![Preview](preview.jpg)
 
 ## Live links (replace with your own)
-- Leaflet Map https://www.socioatlas.xyz/socioatlas_map/
+- Leaflet Map https://www.socioatlas.xyz/map/
 - Google Sheets template https://docs.google.com/spreadsheets/d/1tMx_0t1HgMtcHO-YSyfTYnvkbM7M1uJaM9d95TzTozg/edit#gid=0
 
 ## Create your own
